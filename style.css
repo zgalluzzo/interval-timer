@@ -63,3 +63,24 @@ select:focus-visible {
   outline: 3px solid #93c5fd;
   outline-offset: 2px;
 }
+.timer-display {
+  margin-top: 2rem;
+  text-align: center;
+}
+
+.timer-display[hidden] {
+  display: none;
+}
+
+#timer-status {
+  margin-bottom: 0.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.time-remaining {
+  margin: 0;
+  font-size: clamp(3rem, 15vw, 5rem);
+  font-variant-numeric: tabular-nums;
+  font-weight: 700;
+}
