@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interval Timer</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+  <body>
+    <main class="timer">
+      <h1>Interval Timer</h1>
+
+      <form id="timer-settings">
+        <div class="form-field">
+          <label for="rounds">Number of rounds</label>
+          <input
+            id="rounds"
+            name="rounds"
+            type="number"
+            min="1"
+            value="3"
+            required
+          >
+        </div>
+
+        <div class="form-field">
+          <label for="round-duration">Round duration in seconds</label>
+          <input
+            id="round-duration"
+            name="roundDuration"
+            type="number"
+            min="1"
+            value="60"
+            required
+          >
+        </div>
+
+        <div class="form-field">
+          <label for="rest-duration">Rest duration in seconds</label>
+          <input
+            id="rest-duration"
+            name="restDuration"
+            type="number"
+            min="0"
+            value="30"
+            required
+          >
+        </div>
+
+        <div class="form-field">
+          <label for="sound">End-of-round sound</label>
+          <select id="sound" name="sound">
+            <option value="bell">Bell</option>
+            <option value="beep">Beep</option>
+            <option value="chime">Chime</option>
+          </select>
+        </div>
+
+        <button type="submit">Start timer</button>
+      </form>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
